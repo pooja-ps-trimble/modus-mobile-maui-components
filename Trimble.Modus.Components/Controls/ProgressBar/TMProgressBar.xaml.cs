@@ -37,6 +37,8 @@ public partial class TMProgressBar : ContentView
     {
         InitializeComponent();
         this.progressBarIndicatorText.FontSize = _defaultFontSize;
+        this.baseProgressBar.SetDynamicResource(BaseProgressBar.ProgressColorProperty, "ProgressBarPrimaryBackgroundColor");
+        this.baseProgressBar.SetDynamicResource(BaseProgressBar.BaseColorProperty, "ProgressBarPrimaryBaseColor");
     }
 
     private static void OnSizeChangedProperty(BindableObject bindable, object oldValue, object newValue)

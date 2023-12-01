@@ -11,6 +11,8 @@
   <VerticalStackLayout BindingContext="{x:Reference progressBar}"
                        Spacing="5">
     <base:BaseProgressBar Progress="{Binding Progress}"
+    <base:BaseProgressBar x:Name="baseProgressBar"
+                          Progress="{Binding Progress}"
                           Size="{Binding Size}"/>
     <Label x:Name="progressBarIndicatorText"
            Text="{Binding Text}"
